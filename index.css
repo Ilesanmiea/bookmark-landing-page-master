@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
 }
+body{
+  overflow-x: hidden;
+}
 
 :root {
   /* document colors  */
@@ -93,7 +96,7 @@ nav div {
    line-height: 1.2;
 }
 
-.hero-image-content h1 + p, .features-sections >  h3{
+.hero-image-content h1 + p{
   font-size: 1em;
   margin-top: 1em;
   font-weight: 400;
@@ -130,7 +133,7 @@ nav div {
   height: 16.25em;
   width: calc(20.25em + 30.25em);
   border-radius:  9.375em 0 0  9.375em;
-  margin-left: 48em;
+  right: -28em;
   position:absolute;
   z-index: -1111111;
   overflow-x: hidden;
@@ -147,8 +150,16 @@ main{
   
 }
 .features-sections{
-  text-align: center;
+  
 }
-.features-sections + h3{
-text-align: center;
+.features-sections > h3{
+  font-size: 1em;
+  margin-top: 1em;
+  font-weight: 400;
+  opacity: 0.6;
+  /* margin: 1.125em 6.25em; */
+  width: 30em;
+  text-align: center;
+  /* display: flex;
+  justify-content: center; */
 }
