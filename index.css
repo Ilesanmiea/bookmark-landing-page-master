@@ -92,7 +92,7 @@ nav div {
    line-height: 1.2;
 }
 
-.hero-image-content h1 + p{
+.hero-image-content h1 + p, .features-sections >  h3{
   font-size: 1em;
   margin-top: 1em;
   font-weight: 400;
@@ -138,4 +138,15 @@ nav div {
 /* The blue background color well displaced */
 .bgc-one{
   top: 10.25em;
+}
+
+/* The sections part */
+main{
+  
+}
+.features-sections{
+  text-align: center;
+}
+.features-sections + h3{
+text-align: center;
 }
