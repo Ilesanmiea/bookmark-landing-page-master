@@ -78,6 +78,7 @@ nav div {
   display: flex;
   margin: 6.25em 4em;
   position: relative;
+  /* overflow-x: hidden; */
 }
 
 /* The hero contents */
@@ -129,9 +130,10 @@ nav div {
   height: 16.25em;
   width: calc(20.25em + 30.25em);
   border-radius:  9.375em 0 0  9.375em;
-  right: -28em;
+  margin-left: 48em;
   position:absolute;
   z-index: -1111111;
+  overflow-x: hidden;
   /* float: right; */
 }
 
