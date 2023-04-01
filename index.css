@@ -150,16 +150,46 @@ main{
   
 }
 .features-sections{
-  
+  /* display: flex; */
+  text-align: center;
+
 }
-.features-sections > h3{
+
+.features-sections  h3{
   font-size: 1em;
   margin-top: 1em;
   font-weight: 400;
   opacity: 0.6;
-  /* margin: 1.125em 6.25em; */
-  width: 30em;
+  justify-content: center;
   text-align: center;
-  /* display: flex;
-  justify-content: center; */
+  
 }
+#feature-break-content{
+  
+}
+
+.varieties-selection{
+  display: flex;
+  margin-top: 2.5em;
+  justify-content: center;
+  /* border-bottom: 2px solid var(--soft-red); */
+}
+
+.varieties-selection div{
+  /* m-right: 2em; */
+  padding-bottom: 0.8em;
+  border-bottom: 2px;
+  border-bottom: 1.5px solid var(--Grayish-Blue);
+  width: 9.375em;
+  opacity:0.8;
+  font-size:  0.9375em;
+}
+
+.two{
+  flex-direction: row-reverse;
+}
+
+.bgc-two{
+  
+}
+
