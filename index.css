@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -37,7 +37,12 @@ nav div {
 }
 
 .nav-list li a :nth-child(4) {
-  color: yellow
+  color: yellow;
+}
+
+.accordion{
+  margin: 0  25em  ;
+  
 }
 
 .accordion-header {
@@ -51,6 +56,9 @@ nav div {
   outline: none;
   font-size: 16px;
   transition: background-color 0.2s ease-out;
+  font-weight:bold;
+  border-bottom: 1px solid var(--Grayish-Blue);
+  
 }
 
 .accordion-header.active,
@@ -59,7 +67,7 @@ nav div {
 }
 
 .accordion-content {
-  padding: 18px;
+  padding: 0px 12px;
   background-color: #fff;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -75,121 +83,269 @@ nav div {
   transition: max-height 0.4s ease-in;
 }
 
+/* The second blue button */
+.blue-button-one{
+  background-color: var(--soft-blue);
+  color: #fff;
+  font-weight: 600;
+  width: 80px;
+  margin: 2em auto;
+  border-radius: 4px;
+  text-align: center;
+  padding: 0.5em 0.245574683672em;
+
+  
+  
+}
+
 /* The hero sections design */
 
-.hero-image-section{
+.hero-image-section {
   display: flex;
+  justify-content: space-around;
   margin: 6.25em 4em;
   position: relative;
   /* overflow-x: hidden; */
 }
 
 /* The hero contents */
-.hero-image-content{
-  width:50%;
+.hero-image-content {
+  width: 50%;
   vertical-align: middle;
   margin-top: 4em;
 }
-.hero-image-content h1{
-   width: 10.25em;
-   font-weight: 700;
-   line-height: 1.2;
+
+.hero-image-content h1 {
+  width: 10.25em;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-.hero-image-content h1 + p{
+.hero-image-content h1 + p {
   font-size: 1em;
   margin-top: 1em;
   font-weight: 400;
   opacity: 0.6;
   width: 28em;
 }
-.hero-buttons{
+.hero-buttons {
   display: flex;
   margin-top: 1.125em;
 
 }
 
-.hero-buttons .button{
+.hero-buttons .button {
   margin-right: 1em;
   border: 1px solid black;
   padding: 0.5em;
   border-radius: 0.2em;
   cursor: pointer;
   margin-top: 1em;
-  font-size:  0.875em ;
+  font-size: 0.875em;
   opacity: 0.8;
-
 }
 
 /* The hero-images */
-.hero-image-content + img{
- max-width: 50%; 
- 
- 
+.hero-image-content + img {
+  max-width: 50%;
 }
 
-.blue-background{
-  background-color: var(--soft-blue) ;
+.blue-background {
+  background-color: var(--soft-blue);
   height: 16.25em;
   width: calc(20.25em + 30.25em);
-  border-radius:  9.375em 0 0  9.375em;
+  border-radius: 9.375em 0 0 9.375em;
   right: -28em;
-  position:absolute;
+  position: absolute;
   z-index: -1111111;
   overflow-x: hidden;
   /* float: right; */
 }
 
 /* The blue background color well displaced */
-.bgc-one{
-  top: 10.25em;
+.bgc-one {
+  top: 14.25em;
 }
 
 /* The sections part */
-main{
-  
+main {
 }
-.features-sections{
+.features-sections {
   /* display: flex; */
   text-align: center;
-
 }
 
-.features-sections  h3{
+.features-sections h3 {
   font-size: 1em;
   margin-top: 1em;
   font-weight: 400;
   opacity: 0.6;
   justify-content: center;
   text-align: center;
-  
 }
-#feature-break-content{
-  
+#feature-break-content {
 }
 
-.varieties-selection{
+.varieties-selection {
   display: flex;
   margin-top: 2.5em;
   justify-content: center;
   /* border-bottom: 2px solid var(--soft-red); */
 }
 
-.varieties-selection div{
+.varieties-selection div {
   /* m-right: 2em; */
   padding-bottom: 0.8em;
   border-bottom: 2px;
   border-bottom: 1.5px solid var(--Grayish-Blue);
   width: 9.375em;
-  opacity:0.8;
-  font-size:  0.9375em;
+  opacity: 0.8;
+  font-size: 0.9375em;
 }
 
-.two{
+.two {
   flex-direction: row-reverse;
+  justify-content: space-around;
+}
+.two img {
+  margin-right: 5em;
 }
 
-.bgc-two{
+.bgc-two {
+  border-radius: 0 9.375em 9.37em 0;
+  left: -30em;
+  bottom: -48em;
+}
+
+.blue-button {
+  background-color: var(--soft-blue);
+  color: #fff;
+  font-weight: 600;
+  width: auto;
+  border: none;
+}
+
+/* card sections for then browsers */
+.card-sections {
+  display: flex;
+  justify-content: center;
+  margin: 3.25em 0;
+}
+.card {
+  width: 14.25em;
+  height: 20.25em;
+  background-color: white;
+  margin-right: 2.25em;
+}
+
+.inner-card-design {
+  padding: 2em 2em;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 5px 6px whitesmoke;
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+.inner-card-design img {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+.inner-card-design > a {
+  background-color: var(--soft-blue);
+  text-decoration: none;
+  border-radius: 0.25em;
+  padding: 0.4em;
+  color: white;
+  font-weight: 600;
+  font-size: 0.875em;
+  margin-top: 1em;
+  cursor: pointer;
+  width: auto;
+  transform: translateY(10px);
+}
+.inner-card-design h3,
+.inner-card-design p {
+  margin-top: 0.5em;
+}
+.inner-card-design p {
+  opacity: 0.8;
+}
+
+.three {
+  margin: 4.25em;
+}
+
+#bgc-dots {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  margin-top: 1em;
+}
+
+.firefox {
+  margin-top: 2.5em;
+}
+.opera {
+  margin-top: 4.5em;
+}
+
+.cta-gen{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  background-color: var(--soft-blue);
+  padding: 5em 4em;
+}
+
+.call-to-action{
+  color: #fff;
   
 }
 
+.call-to-action h2{
+  letter-spacing: 8px;
+  font-weight: 500;
+  font-size: 1em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  transform: scale(0.7);
+}
+
+.call-to-action h3{
+  width: 350px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size:  1.6em;
+}
+
+.cta-form {
+  margin-top: 1em;
+display: flex;
+ta
+
+}
+
+.cta-form input{
+  margin-right: 0.8em;
+  padding: 0.5em;
+}
+
+.button-1{
+  background-color: white;
+  color: var(--soft-blue);
+  font-weight: 600;
+  border-radius: 4px;
+  text-align: center;
+  padding: 0.6em 0.5em;
+}
+
+footer{
+  display: flex;
+  background-color:var(--Very-Dark-Blue);
+  color: #fff;
