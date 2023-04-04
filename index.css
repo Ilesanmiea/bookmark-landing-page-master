@@ -93,9 +93,6 @@ nav div {
   border-radius: 4px;
   text-align: center;
   padding: 0.5em 0.245574683672em;
-
-  
-  
 }
 
 /* The hero sections design */
@@ -349,3 +346,4 @@ footer{
   display: flex;
   background-color:var(--Very-Dark-Blue);
   color: #fff;
+}
