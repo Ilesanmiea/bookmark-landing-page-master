@@ -17,6 +17,8 @@ body {
 }
 
 /* The navbar designs */
+
+
 nav {
   margin: 1em 4em;
 }
@@ -26,7 +28,9 @@ nav div {
   flex-direction: row;
   justify-content: space-between;
 }
-
+#white-logo{
+  display: none;
+}
 .nav-list li {
   list-style-type: none;
 }
@@ -38,6 +42,19 @@ nav div {
 
 .nav-list li a :nth-child(4) {
   color: yellow;
+}
+
+#nav-button{
+  padding: 0.5em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  /* font-size: 0.875em; */
+  opacity: 0.8;
+  box-shadow: 1px 2px 6px 1px rgb(195, 195, 245);
+  background-color: var(--soft-red);
+  color: white;
+  width: 10em;
+  
 }
 
 .accordion{
@@ -93,6 +110,7 @@ nav div {
   border-radius: 4px;
   text-align: center;
   padding: 0.5em 0.245574683672em;
+  box-shadow: 1px 2px 6px 1px var(--Grayish-Blue);
 }
 
 /* The hero sections design */
@@ -133,13 +151,19 @@ nav div {
 
 .hero-buttons .button {
   margin-right: 1em;
-  border: 1px solid black;
-  padding: 0.5em;
-  border-radius: 0.2em;
+  /* border: 1px solid black; */
+  padding: 0.8em;
+  border-radius: 0.5em;
   cursor: pointer;
   margin-top: 1em;
   font-size: 0.875em;
   opacity: 0.8;
+  box-shadow: 1px 2px 6px 1px rgb(195, 195, 245);
+}
+
+.hero-buttons .button:nth-child(1){
+  background-color: var(--soft-blue);
+  color: white;
 }
 
 /* The hero-images */
@@ -147,7 +171,7 @@ nav div {
   max-width: 50%;
 }
 
-.blue-background {
+.blue-background{
   background-color: var(--soft-blue);
   height: 16.25em;
   width: calc(20.25em + 30.25em);
@@ -194,7 +218,7 @@ main {
   /* m-right: 2em; */
   padding-bottom: 0.8em;
   border-bottom: 2px;
-  border-bottom: 1.5px solid var(--Grayish-Blue);
+  border-bottom: 4px solid var(--soft-red);
   width: 9.375em;
   opacity: 0.8;
   font-size: 0.9375em;
@@ -220,6 +244,7 @@ main {
   font-weight: 600;
   width: auto;
   border: none;
+  box-shadow: 1px 2px 6px 1px rgb(195, 195, 245);
 }
 
 /* card sections for then browsers */
@@ -334,16 +359,148 @@ ta
 }
 
 .button-1{
-  background-color: white;
-  color: var(--soft-blue);
+  background-color: var(--soft-red);
+  color: var(--);
   font-weight: 600;
   border-radius: 4px;
   text-align: center;
   padding: 0.6em 0.5em;
+ 
 }
 
 footer{
   display: flex;
   background-color:var(--Very-Dark-Blue);
   color: #fff;
+  height: 6.25em;
+  width: 100%;
+  /* justify-content: space-around; */
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+footer .footer{
+  margin-left:4em;
+}
+.footer-icons{
+  margin-right:4em;
+}
+
+footer .footer img, .footer a, .footer-icons img{
+ margin-right: 2em ;
+ color: #fff;
+ text-decoration: none;
+ text-transform: uppercase;
+ font-weight: 500;
+}
+
+ .footer img{
+  transform: translateY(5px);
+}
+
+
+
+@media (max-width: 840px) {
+  html{
+    overflow-x: hidden;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  header nav {
+    position: relative;
+    overflow-x: hidden;
+  }
+  nav {
+    background-color: var(--Very-Dark-Blue);
+    height: 100%;
+    margin: 0;
+    position: fixed;
+    z-index: 1111111;
+    top:0;
+    width: 100%;
+    overflow-x: hidden;
+    display: none;
+  }
+  .first-div {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  .nav-list{
+    display: block;
+    margin-top: 2em;
+  }
+
+  .nav-list li {
+    text-decoration: none;
+    margin-bottom: 1em;
+  }
+
+  .nav-list li a {
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1.3em;
+  }
+  #white-logo{
+    display: block;
+    margin-bottom: 1em ;
+
+  }
+  .logo-icons{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #close-icon{
+    width: 1em;
+    height: 1em;
+   
+  }
+
+  #black-logo{
+    display: none;
+  }
+
+.hero-image-section{
+  flex-direction: column-reverse;
+  margin: 1em;
+}
+.hero-image-content + img {
+  max-width: 100%;
+}
+.blue-background{
+  height: 10em;
+  right: -32em;
+  overflow-x: hidden;
+}
+.bgc-one{
+  top: 8em
+}
+
+nav {
+  margin: 1em 1em;
+}
+
+.hero-image-content{
+  text-align: center;
+  justify-content: center;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.hero-image-content h1{
+  /* width: 22em; */
+}
+.hero-image-content h1 + p{
+  width:20em;
+  display: flex;
+  justify-content: center;
+}
+
 }

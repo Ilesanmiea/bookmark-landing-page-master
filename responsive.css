@@ -1,0 +1,8 @@
+/* Mobile Designs at 840 px */
+:root {
+  /* document colors  */
+  --soft-blue: rgb(83, 104, 223);
+  --soft-red: rgb(250, 87, 87);
+  --Grayish-Blue: rgb(145, 148, 161);
+  --Very-Dark-Blue: rgb(37, 43, 70);
+}

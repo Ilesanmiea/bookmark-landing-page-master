@@ -11,6 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,21 +37,26 @@
   <body>
     <header>
       <!-- The navigation bar -->
-      <nav>
+      <nav id="sideNav">
         <!-- The bookmark Logo Icon -->
-        <div>
+        <div class="first-div">
           <div class="logo-icon">
-            <img src="images/logo-bookmark.svg" alt="Bookmark Logo" />
+            <img src="images/logo-bookmark.svg" alt="Bookmark Logo" id="black-logo" />
+            <img src="images/logo-bookmark - white.svg" alt="Bookmark Logo" id="white-logo" />
+            <img src="images/icon-close.svg" alt="" id="close-icon" onclick="closeNav()" >
           </div>
           <!-- The nav lists of the navigation bar -->
           <div class="nav-list">
             <li><a href="#"> Features</a></li>
             <li><a href="#"> Pricing</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#"> Login</a></li>
+            <li ><a href="#" id="nav-button" > Login</a></li>
           </div>
         </div>
       </nav>
+      <!-- for the mobile designs -->
+
+      
 
       <!-- The hero-image-section -->
       <div class="hero-image-section one">
@@ -141,7 +147,7 @@
               <h3>Add to Chrome</h3>
               <p>Minimum version 62</p>
               <img src="images/bg-dots.svg" alt="background-dots" id="bgc-dots" />
-              <a href="#"> Add & Install Extension</a>
+              <a href="#" class="blue-button-one"> Add & Install Extension</a>
             </div>
           </div>
           <!-- For Firefox -->
@@ -151,7 +157,7 @@
               <h3>Add to Firefox</h3>
               <p>Minimum version 55</p>
               <img src="images/bg-dots.svg" alt="background-dots" id="bgc-dots" />
-              <a href="#"> Add & Install Extension</a>
+              <a href="#"  class="blue-button-one" > Add & Install Extension</a>
             </div>
           </div>
 
@@ -163,7 +169,7 @@
               <h3>Add to Firefox</h3>
               <p>Minimum version 46</p>
               <img src="images/bg-dots.svg" alt="background-dots"  id="bgc-dots"/>
-              <a href="#"> Add & Install Extension</a>
+              <a href="#" class="blue-button-one" > Add & Install Extension</a>
             </div>
           </div>
 </div>
@@ -246,7 +252,7 @@
 
     <footer>
       <div class="footer">
-        <img src="images/logo-bookmark.svg" alt="" />
+        <img src="images/logo-bookmark - white.svg" alt="" />
         <a href="#">features</a>
         <a href="#"> Pricing</a>
         <a href="#"> Contact Us </a>
@@ -262,7 +268,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="linktr.ee/ilesanmi_ea"> Ilesanmi Emmanuel</a>.
     </p>
 
     <script src="app.js"></script>
@@ -272,5 +278,6 @@
 <div>
   <p></p>
 </div>
+
 
 

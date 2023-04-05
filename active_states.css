@@ -1,0 +1,52 @@
+
+:root {
+    /* document colors  */
+    --soft-blue: rgb(83, 104, 223);
+    --soft-red: rgb(250, 87, 87);
+    --Grayish-Blue: rgb(145, 148, 161);
+    --Very-Dark-Blue: rgb(37, 43, 70);
+  }
+
+
+/* The navbars */
+
+.nav-list li a:hover{
+    color: var(--soft-red)
+
+}
+
+#nav-button:hover{
+    background-color: #fff;
+    color: var(--soft-red);
+    border: 1.5px solid var(--soft-red);
+}
+
+.hero-buttons .button:hover   {
+    color: var(--soft-blue);
+    border: 1.5px solid var(--soft-blue);
+    background-color: white;
+}
+
+.blue-button-one:hover{
+    color: var(--soft-blue);
+    border: 1.5px solid var(--soft-blue);
+    background-color: white;
+}
+
+.accordion-header:hover{
+    color: var(--soft-red);
+}
+
+.button-1:hover{
+    background-color: #fff;
+    color: var(--soft-red);
+    border: 1.5px solid var(--soft-red);
+}
+
+.footer a:hover{
+    color: var(--soft-red); 
+}
+
+.footer-icons img:hover{
+    background-color: var(--soft-red);
+}

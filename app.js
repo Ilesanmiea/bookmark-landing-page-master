@@ -11,3 +11,8 @@ accordionHeaders.forEach(header => {
     }
   });
 });
+
+
+function closeNav() {
+
+document.getElementById("sideNav").style.display = "block";}
